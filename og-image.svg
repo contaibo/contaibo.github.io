@@ -1,0 +1,95 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="og-cyber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="og-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#030712"/>
+      <stop offset="100%" style="stop-color:#0a0f1a"/>
+    </linearGradient>
+    <filter id="og-glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.05">
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#00f0ff" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="150" r="200" stroke="#00f0ff" stroke-width="1" fill="none" opacity="0.1"/>
+  <circle cx="1000" cy="150" r="280" stroke="#a855f7" stroke-width="1" fill="none" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" stroke="#00f0ff" stroke-width="1" fill="none" opacity="0.08"/>
+
+  <!-- Data flow lines -->
+  <line x1="0" y1="200" x2="400" y2="200" stroke="url(#og-cyber)" stroke-width="2" opacity="0.3"/>
+  <line x1="800" y1="430" x2="1200" y2="430" stroke="url(#og-cyber)" stroke-width="2" opacity="0.3"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(80, 200)">
+    <path
+      d="M100 0
+         L40 0
+         C18 0 0 18 0 40
+         L0 60
+         C0 82 18 100 40 100
+         L100 100
+         L100 80
+         L45 80
+         C28 80 15 67 15 50
+         L15 50
+         C15 33 28 20 45 20
+         L100 20
+         Z"
+      fill="url(#og-cyber)"
+      filter="url(#og-glow)"
+    />
+    <circle cx="115" cy="10" r="8" fill="#00f0ff"/>
+    <circle cx="115" cy="90" r="8" fill="#a855f7"/>
+  </g>
+
+  <!-- Brand name -->
+  <text x="210" y="275" font-family="system-ui, sans-serif" font-size="72" font-weight="700" fill="#f9fafb">
+    Contaibo
+  </text>
+
+  <!-- Tagline -->
+  <text x="82" y="360" font-family="monospace" font-size="24" fill="#00f0ff" letter-spacing="0.1em">
+    CLOUD INFRASTRUCTURE
+  </text>
+
+  <!-- Feature badges -->
+  <g transform="translate(82, 420)">
+    <rect x="0" y="0" width="140" height="36" rx="4" fill="rgba(0, 240, 255, 0.1)" stroke="#00f0ff" stroke-width="1"/>
+    <text x="70" y="24" font-family="monospace" font-size="14" fill="#00f0ff" text-anchor="middle">99.9% UPTIME</text>
+  </g>
+  <g transform="translate(240, 420)">
+    <rect x="0" y="0" width="160" height="36" rx="4" fill="rgba(0, 240, 255, 0.1)" stroke="#00f0ff" stroke-width="1"/>
+    <text x="80" y="24" font-family="monospace" font-size="14" fill="#00f0ff" text-anchor="middle">GLOBAL NETWORK</text>
+  </g>
+  <g transform="translate(418, 420)">
+    <rect x="0" y="0" width="140" height="36" rx="4" fill="rgba(0, 240, 255, 0.1)" stroke="#00f0ff" stroke-width="1"/>
+    <text x="70" y="24" font-family="monospace" font-size="14" fill="#00f0ff" text-anchor="middle">NVMe STORAGE</text>
+  </g>
+
+  <!-- URL -->
+  <text x="82" y="560" font-family="monospace" font-size="18" fill="#6b7280">
+    contaibo.com
+  </text>
+
+  <!-- Decorative corner elements -->
+  <path d="M0 0 L60 0 L60 4 L4 4 L4 60 L0 60 Z" fill="#00f0ff" opacity="0.5"/>
+  <path d="M1200 630 L1140 630 L1140 626 L1196 626 L1196 570 L1200 570 Z" fill="#a855f7" opacity="0.5"/>
+</svg>

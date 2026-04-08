@@ -1,0 +1,54 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyber-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#030712"/>
+  <circle cx="256" cy="256" r="240" stroke="url(#cyber-gradient)" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Inner grid pattern -->
+  <g opacity="0.1">
+    <line x1="56" y1="256" x2="456" y2="256" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="256" y1="56" x2="256" y2="456" stroke="#00f0ff" stroke-width="1"/>
+    <circle cx="256" cy="256" r="100" stroke="#00f0ff" stroke-width="1" fill="none"/>
+    <circle cx="256" cy="256" r="160" stroke="#00f0ff" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Main "C" letterform - geometric/tech style -->
+  <g filter="url(#glow)">
+    <path
+      d="M320 156
+         L192 156
+         C144 156 106 194 106 242
+         L106 270
+         C106 318 144 356 192 356
+         L320 356
+         L320 316
+         L200 316
+         C172 316 150 294 150 266
+         L150 246
+         C150 218 172 196 200 196
+         L320 196
+         Z"
+      fill="url(#cyber-gradient)"
+    />
+  </g>
+
+  <!-- Accent dots/nodes -->
+  <circle cx="340" cy="176" r="12" fill="#00f0ff" filter="url(#glow)"/>
+  <circle cx="340" cy="336" r="12" fill="#a855f7" filter="url(#glow)"/>
+
+  <!-- Connection lines -->
+  <line x1="340" y1="188" x2="340" y2="324" stroke="url(#cyber-gradient)" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>
